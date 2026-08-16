@@ -37,8 +37,15 @@ export function mainLandingNav(e) {
     const key = e.key.toLowerCase();
     // always safe if DOM changed
     if (!steps.length) updateSteps();
-    if (!steps.length) return false;
-    // if(e)
+    if (!steps.length) {
+        if(key === 'enter'){
+            const mainLandingPage = e.target.closest('.main-landing-page')
+            console.log(mainLandingNav)
+            const dataAddBtn = mainLandingPage.querySelector('.data-add-btn')
+            dataAddBtn.focus()
+        }
+    }
+
     if(!isNaN(key)){
         const intKey = parseInt(key)
         steps[intKey -1].focus()
