@@ -1,38 +1,18 @@
 /* layout-step-prompts.css */
 .step {
-    /* position: relative; */
     display: flex;
     flex-direction: column;
 }
 .content-boxes{
     display: flex;
     align-items: flex-start;
-    /* position: relative; */
     gap: 2rem;
-    position: relative;
 }
 .content-boxes > .copy-code{
     flex-basis: 55%
-    /* width: 80%; */
 }
 .content-boxes > .step-vid,
 .content-boxes>.step-img{
     flex-basis: 50%;
-    position: fixed;
-    z-index: 0;
 }
 
-.step-prompt {
-    /* position: relative; */
-}
-
-.content-box {
-    position: relative;
-    z-index: 2;
-}
-
-.step-img,
-.step-vid {
-    /* position: relative; */
-    /* z-index: 1; */
-}

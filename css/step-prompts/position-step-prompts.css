@@ -1,0 +1,22 @@
+/* position-step-prompts.css */
+.content-box {
+    position: relative;
+    z-index: 2;
+}
+.content-boxes{
+    position: relative;
+}
+
+.content-boxes > .step-vid,
+.content-boxes>.step-img{
+    position: fixed;
+    z-index: 0;
+}
+
+
+
+.content-box {
+    position: relative;
+    z-index: 2;
+}
+
