@@ -38,6 +38,7 @@ export function mainLandingNav(e) {
     // always safe if DOM changed
     if (!steps.length) updateSteps();
     if (!steps.length) return false;
+    // if(e)
     if(!isNaN(key)){
         const intKey = parseInt(key)
         steps[intKey -1].focus()

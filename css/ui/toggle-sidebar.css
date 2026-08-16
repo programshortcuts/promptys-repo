@@ -4,6 +4,7 @@
     bottom: 8%;
     left: 2.5%;
     transform: scale(1.75);
+    z-index: 999;
 }
 .main-content.collapse .side-bar{
     width: 2% !important;

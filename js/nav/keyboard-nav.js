@@ -15,6 +15,7 @@ export function initKeyboardNav({e,container}){
 }
 function routeKey(e){
     // object destructuring
+    
     const {zone,isLetterNav} = navState
     // should i query side-bar a elements here?
     if(zone === 'side-bar'){

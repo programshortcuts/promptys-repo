@@ -8,30 +8,31 @@ import { changeTutorialLink } from "./ui/change-tutorial-link.js";
 const pageWrapper = document.querySelector('.page-wrapper')
 const mainContent = pageWrapper.querySelector('.main-content')
 function initApp() {
-    initSidebar();
-    initToggleSideBar(mainContent)
-    initGloablListeners()
-    const allEls_TEMPORARY = pageWrapper.querySelectorAll('*')
-    allEls_TEMPORARY.forEach(el => {
-        if (el.hasAttribute('data-autoload')){
-            el.focus()
-        }
-    })
+initSidebar();
+initToggleSideBar(mainContent)
+initGloablListeners()
+const allEls_TEMPORARY = pageWrapper.querySelectorAll('*')
+allEls_TEMPORARY.forEach(el => {
+    if (el.hasAttribute('data-autoload')){
+        el.focus()
+    }
+})
 }
 
 function initGloablListeners(){
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Tab') {
-            // console.log('TAB pressed — active element:', document.activeElement)
-        }
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') {
+        // console.log('TAB pressed — active element:', document.activeElement)
+    }
+})
+pageWrapper.addEventListener('keydown', e => {
+    if(e.target.tagName == 'TEXTAREA' || e.target.tagName == 'INPUT') return
+    initKeyboardNav({
+        e,
+        container: pageWrapper
     })
-    pageWrapper.addEventListener('keydown', e => {
-        initKeyboardNav({
-            e,
-            container: pageWrapper
-        })
-        changeTutorialLink({e})        
-    });
+    changeTutorialLink({e})        
+});
 }
 
 

@@ -2,8 +2,8 @@
 export function handleImgSizes({e}){
     const step = e.target.closest('.step')
     if(!step) return
-    console.log(step.querySelector('video'))
-    const media = step.querySelector('img') ? step.querySelector('img') : step.querySelector('video')
+    console.log(step.querySelector('.step-vid'))
+    const media = step.querySelector('.step-img') ? step.querySelector('.step-img') : step.querySelector('.step-vid')
     if(media.length > 1){
         alert('not yet')
     } else {

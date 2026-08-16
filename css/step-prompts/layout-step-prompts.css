@@ -6,9 +6,20 @@
 }
 .content-boxes{
     display: flex;
-        align-items: flex-start;
-        position: relative;
-        gap: 2rem;
+    align-items: flex-start;
+    /* position: relative; */
+    gap: 2rem;
+    position: relative;
+}
+.content-boxes > .copy-code{
+    flex-basis: 55%
+    /* width: 80%; */
+}
+.content-boxes > .step-vid,
+.content-boxes>.step-img{
+    flex-basis: 50%;
+    position: fixed;
+    z-index: 0;
 }
 
 .step-prompt {
@@ -22,6 +33,6 @@
 
 .step-img,
 .step-vid {
-    position: relative;
-    z-index: 1;
+    /* position: relative; */
+    /* z-index: 1; */
 }

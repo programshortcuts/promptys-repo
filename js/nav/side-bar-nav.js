@@ -50,8 +50,6 @@ export function sideBarNav(e) {
     }
     
     if (key == 'm') {
-        console.log('here')
-        console.log(mainLandingPage)
         mainLandingPage.focus()
         scrollTo(0,0)
 

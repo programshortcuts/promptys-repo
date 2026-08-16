@@ -6,10 +6,9 @@
 }
 .main-content{
     display: flex;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 
 }
-
 .main-landing-page{
     flex-grow: 1;
 }
