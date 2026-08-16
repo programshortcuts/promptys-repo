@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>paul-mcwhorter-arduino</title>
-    <link rel="stylesheet" href="css-index/main-index.css">
-    <script type="module" src="js-index/keyboard-nav-index.js" defer></script>
+    <title>promptys-prompt-type-saver</title>
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script type="module" src="js/app.js" defer></script>
     <meta http-equiv="Content-Security-Policy" content="
             default-src 'self';
             script-src 'self' 'unsafe-inline' ;
@@ -19,49 +20,50 @@
               form-action 'self';
         ">
 </head>
-<body>
+<body class="dark-mode">
     <div class="page-wrapper">
         <header class="page-header">
             <div class="back-links">
                 <a  rel="noopener noreferrer"
                  data-nav-target="homepageLink" href="https://programshortcuts.github.io/tyler-tomani-2026/">homepage</a>
             </div>
-            <h1>paul-mcwhorter-arduino</h1>
+            <h1>promptys -prompt typer /saver</h1>
             <div class="tutorial-dark-mode-container">
-                <a data-nav-target="tutorialImgLink" rel="noopener noreferrer" target="_blank"
+                <sup>** maybe alow this to be filled
+                    with vid later
+                </sup>
+                <!-- <a data-nav-target="tutorial-link" rel="noopener noreferrer" target="_blank"
+                    id="tutorialLink" data-timestamp="0"
                     href="https://www.youtube.com/watch?v=fJWR7dBuc18&list=PLGs0VKk2DiYw-L-RibttcvK-WBZm8WLEP">
-                    <img src="images/paul-mcwhorter-yt-banner.jpg" alt="">
-                </a>
+                    <img src="../01/01.jpeg" alt="">
+                </a> -->
             </div>
         </header>
         <nav>
-            <div class="playlists-container">
-                <div class="playlist">
-                    <h2>New Arduino tutorials Playlist</h2>
-                    <div class="vids-container">
-                        <a rel="noopener noreferrer" class="vid" href="playlist/New_Arduino_Tutorials/01/01.html"> 
-                            <h3>Arduino Tutorial 1: Setting Up and Programming the Arduino for Absolute Beginners</h3>
-                            <img src="playlist/New_Arduino_Tutorials/01/01.jpeg" alt="">
-                        </a>
-                        <a rel="noopener noreferrer" class="vid">
-                            <h3>Arduino Tutorial 2: Understanding How Light Emitting Diodes (LEDs) Work</h3>
-                            <img src="playlist/New_Arduino_Tutorials/01/01.jpeg" alt="">
-                        </a>
-                        <a rel="noopener noreferrer" class="vid">
-                            <h3>Arduino Tutorial 3: Understanding How Breadboards Work</h3>
-                            <img src="playlist/New_Arduino_Tutorials/01/01.jpeg" alt="">
-                        </a>
-                        <div class="vid">
-                            <p>
-                                Scrape rest ...., into json
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            <h2>Promptys - prompt typer saver</h2>
         </nav>
-        
+        <main class="main-content">
+            <aside class="side-bar">
+                <svg  tabindex="0"  data-nav-target="side-bar-btn" id="sideBarBtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                <h2>Playlist</h2>
+                <!-- <a href="./lesson-temp.html">homepage</a> -->
+                <ul id="sideBarList">
+           
+                </ul>
+                <div class="side-bar-btns-container">
+                    <button  data-nav-target="plus-btn"  id="createSidePage">+</button>
+                    <button data-nav-target="edit-side-bar-btn" id="editSideBarBtn">-</button>
+                </div>
+            </aside>
+            <div data-autoload tabindex="0" class="main-landing-page">
+                <h3>Inject .side-bar a href html in here within .main-landing-page</h3>
+            </div>
+        </main>
     </div>
       
 </body>
