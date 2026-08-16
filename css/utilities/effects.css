@@ -1,6 +1,6 @@
 /* effects.css */
 .step-prompt:active,.step-prompt:focus{
-    background-color: lightgreen;
+    background-color: lightgrey;
     padding-left: 3%;
     padding-top: 1%;
 }
