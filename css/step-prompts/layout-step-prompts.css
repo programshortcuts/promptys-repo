@@ -1,3 +1,27 @@
-.step-prompt{
+/* layout-step-prompts.css */
+.step {
+    /* position: relative; */
     display: flex;
+    flex-direction: column;
+}
+.content-boxes{
+    display: flex;
+        align-items: flex-start;
+        position: relative;
+        gap: 2rem;
+}
+
+.step-prompt {
+    /* position: relative; */
+}
+
+.content-box {
+    position: relative;
+    z-index: 2;
+}
+
+.step-img,
+.step-vid {
+    position: relative;
+    z-index: 1;
 }

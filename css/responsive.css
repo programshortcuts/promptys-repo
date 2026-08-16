@@ -1,8 +1,13 @@
+@media screen and (min-width: 721px){
+    .side-bar {
+        max-width: 15vw !important;
+    }
+}
 @media screen and (max-width: 720px){
     .step-img>img,
     .step-vid>video {
-        max-height: 400px;
-        max-width:  400px;
+        max-height: 400px !important;
+        max-width:  400px !important;
     }
     .enlarge {
         transform: scale(1.2) !important;

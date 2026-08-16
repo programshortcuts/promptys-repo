@@ -1,4 +1,29 @@
-.step-prompt textarea{
-    min-height: 50%  ;
+/* sizing-step-prompts.css */
+.step-prompt {
+    /* width: min-content; */
 }
-.step-prompt {}
+.step-prompt textarea {
+    display: block;
+
+    width: 40%;
+    min-width: 400px;
+
+    min-height: 40vh;
+    height: 40vh;
+
+    resize: vertical;
+
+    border: 1px solid blue !important;
+}
+
+.step-prompt .step-img>img,
+.step-prompt .step-vid>video {
+    max-width: 600px;
+    max-height: 600px;
+
+    position: relative;
+    z-index: 1;
+
+    transition: transform .3s ease,
+        position .3s ease;
+}

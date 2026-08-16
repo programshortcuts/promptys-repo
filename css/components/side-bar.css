@@ -1,0 +1,15 @@
+/* .side-bar.css */
+.side-bar {
+    height: 100vh;
+    width: 20vw;
+}
+#sideBarList a,
+#sideBarList li {
+    display: block;
+}
+.side-bar-btns-container {
+    display: flex;
+}
+.side-bar-btns-container button {
+    flex-basis: 50%;
+}

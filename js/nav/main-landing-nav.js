@@ -4,9 +4,11 @@ import { mainLandingPage } from "./keyboard-nav.js";
 import { handleImgSizes } from "../ui/toggle-img-sizes.js";
 let iStep = -1;
 let steps = [];
+let copyCodes = [];
 
 function updateSteps() {
     steps = [...mainLandingPage.querySelectorAll(".step")];
+    copyCodes = [...mainLandingPage.querySelectorAll(".copy-code")];
     steps.forEach(step => {
         if(step.hasAttribute('data-auto-focus')){
             step.focus()
@@ -18,7 +20,7 @@ function updateSteps() {
         step.addEventListener('keydown', e => {
             let key = e.key.toLowerCase()
             if(e.shiftKey &&  key === 'enter'){
-                // handleImgSizes({e})
+                handleImgSizes({e})
             }
         });
         step.addEventListener('focusin', e => {
@@ -39,6 +41,9 @@ export function mainLandingNav(e) {
     if(!isNaN(key)){
         const intKey = parseInt(key)
         steps[intKey -1].focus()
+    }
+    if(key === 'c'){
+        console.log('here c')
     }
     if (key === "f") {
         iStep = (iStep + 1) % steps.length;
@@ -68,6 +73,7 @@ export function mainLandingNav(e) {
 function scrollCenter(el){
     el.scrollIntoView({ 
         behavior: 'smooth', 
-        inline: 'start',
-        block: 'center' })
+        block: 'center'
+        // inline: 'start',
+    })
 }

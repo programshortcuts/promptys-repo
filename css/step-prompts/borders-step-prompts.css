@@ -1,0 +1,11 @@
+/* borders-step-prompts.css */
+
+.step-prompt{
+    border-bottom: 1px solid blue;
+}
+.code-container {
+    border: 1px solid black;
+}
+.add-img-container{
+    border: 1px solid red
+}

@@ -1,3 +1,4 @@
+// toggle-img-sizes.js
 export function handleImgSizes({e}){
     const step = e.target.closest('.step')
     if(!step) return

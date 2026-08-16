@@ -2,10 +2,13 @@
 @import url('responsive.css');
 /* components */
 @import url('components/page-header.css');
+@import url('components/side-bar.css');
 /* ui */
 @import url('ui/toggle-sidebar.css');
 @import url('ui/toggle-img-sizes.css');
 /* step-prompts */
+/* @import url('step-prompts/responsive-step-prompts.css'); */
+@import url('step-prompts/borders-step-prompts.css');
 @import url('step-prompts/layout-step-prompts.css');
 @import url('step-prompts/sizing-step-prompt.css');
 

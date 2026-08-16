@@ -1,3 +1,4 @@
+// toggle-sidebar.js
 import { sideBarBtn } from "../nav/side-bar-nav.js";
 export function initToggleSideBar(mainContent){
     const sideBar = document.querySelector('.side-bar')
