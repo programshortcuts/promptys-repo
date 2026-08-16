@@ -5,11 +5,18 @@
         <h4>00.html - this appears when new side-bar link is added</h4>
         <p>Only the addStepBtn appears</p>
     </header>
-    
+    <nav class="steps-edit-nav">
+        <button data-nav-target="dataStepAdd" class="data-add-step-btn">+</button>
+        <button data-nav-target="eraseDataStep" class="erase-data-step-btn">-</button>
+    </nav>    
     <div class="steps-container">
         <div  tabindex="0" class="step step-prompt" data-video="https://www.youtube.com/watch?v=fJWR7dBuc18&list=PLGs0VKk2DiYw-L-RibttcvK-WBZm8WLEP"
-         data-timestamp="180">
+         data-timestamp="00">
             <h4>1</h4>
+            <nav class="data-edit-nav">
+                <button data-nav-target="dataAdd" class="data-add-btn">+</button>
+                <button data-nav-target="eraseData" class="erase-data-btn">-</button>
+            </nav>
             <div class="content">
                 <p>
                     Make + Button Have options for paragraph with will create a new &lt;p> element (like the one this text is in currently)
