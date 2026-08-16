@@ -2,8 +2,8 @@
 let iSideBarLinks = 0;
 import { tutorialLink } from "../ui/change-tutorial-link.js";
 import { mainLandingPage } from "./keyboard-nav.js";
+export const sideBarBtn = document.querySelector('#sideBarBtn')
 export function sideBarNav(e) {
-    const sideBarBtn = document.querySelector('#sideBarBtn')
     const plusBtn = document.querySelector('[data-nav-target="plus-btn"]')
     const editBtn = document.querySelector('[data-nav-target="edit-side-bar-btn"]')
 

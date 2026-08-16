@@ -80,12 +80,12 @@ function renderSidebar() {
 // ======================
 // CLICK SIDEBAR LINKS
 // ======================
- function initSidebarClickHandler() {
+function initSidebarClickHandler() {
     const sideBarList = document.querySelector("#sideBarList");
 
     if(!document.eventsAdded){
 
-        console.log(pages[default_sidebar_index].file)
+        // console.log(pages[default_sidebar_index].file)
         loadPage(pages[default_sidebar_index])
         
     }

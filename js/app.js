@@ -1,12 +1,15 @@
 // app.js
 import { initSidebar } from "./ui/sidebar.js";
 import { initKeyboardNav } from "./nav/keyboard-nav.js";
+import { initToggleSideBar } from "./ui/toggle-sidebar.js";
 import { loadPages } from "./data/page-storage.js";
 import { changeTutorialLink } from "./ui/change-tutorial-link.js";
 
 const pageWrapper = document.querySelector('.page-wrapper')
+const mainContent = pageWrapper.querySelector('.main-content')
 function initApp() {
     initSidebar();
+    initToggleSideBar(mainContent)
     initGloablListeners()
     const allEls_TEMPORARY = pageWrapper.querySelectorAll('*')
     allEls_TEMPORARY.forEach(el => {
