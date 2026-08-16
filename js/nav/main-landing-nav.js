@@ -10,12 +10,15 @@ function updateSteps() {
     steps.forEach(step => {
         if(step.hasAttribute('data-auto-focus')){
             step.focus()
-            step.scrollIntoView({behavior:'smooth', inline:'center', block:'center'})
+            step.scrollIntoView({
+                behavior:'smooth',
+                block: 'center'
+                 })
         }
         step.addEventListener('keydown', e => {
             let key = e.key.toLowerCase()
-            if(key === 'enter'){
-                handleImgSizes({e})
+            if(e.shiftKey &&  key === 'enter'){
+                // handleImgSizes({e})
             }
         });
         step.addEventListener('focusin', e => {

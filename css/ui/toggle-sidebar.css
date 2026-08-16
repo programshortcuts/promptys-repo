@@ -1,4 +1,15 @@
 /* toggle-sidebar.css */
+.main-content.collapse .side-bar #sideBarBtn{
+    position: absolute;
+    bottom: 25%;
+    left: 2.5%;
+    transform: scale(1.75);
+}
 .main-content.collapse .side-bar{
-    /* width: 5%; */
+    width: 2% !important;
+}
+.main-content.collapse .side-bar .side-bar-btns-container,
+.main-content.collapse .side-bar #sideBarList{
+    opacity: 0;
+    display: none;
 }

@@ -6,6 +6,7 @@
 }
 .main-content{
     display: flex;
+    overflow-x: hidden;
 
 }
 #sideBarList a,
