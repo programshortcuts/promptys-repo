@@ -4,6 +4,9 @@
 @import url('components/page-header.css');
 /* ui */
 @import url('ui/toggle-img-sizes.css');
+/* step-prompts */
+@import url('step-prompts/layout-step-prompts.css');
+@import url('step-prompts/sizing-step-prompt.css');
 
 /* utilities */
 @import url('utilities/borders.css');

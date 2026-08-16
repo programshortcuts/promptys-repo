@@ -6,7 +6,7 @@
     border-right: 1px solid black;
     border-top: 1px solid black;
 }
-.step {
+.step-prompt{
     border: 1px solid blue;
 }
 .code-container {
