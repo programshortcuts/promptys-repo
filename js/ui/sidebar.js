@@ -2,7 +2,7 @@
 // LOAD DEFAULT PAGE WITH THIS INDEX *********************************************
 let default_sidebar_index = 0
 import { refreshSteps } from "../nav/main-landing-nav.js";
-import { mainLandingPage } from "../nav/keyboard-nav.js";
+import { mainLandingPage } from "../nav/main-landing-nav.js";
 import { loadPages, savePages } from "../data/page-storage.js";
 import { promptSaverTemplate } from "../templates/prompts-template.js";
 import {

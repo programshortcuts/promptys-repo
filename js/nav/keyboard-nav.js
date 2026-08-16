@@ -1,5 +1,5 @@
 // keyboard.js
-export const mainLandingPage = document.querySelector(".main-landing-page");
+
 import { letterFocusIndex } from "./letter-focus-index.js";
 import { getFocusZone } from "./focus-zones.js"
 import { sideBarNav } from "./side-bar-nav.js"

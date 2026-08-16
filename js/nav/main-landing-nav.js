@@ -1,6 +1,6 @@
 // nav/main-landing-nav.js
+export const mainLandingPage = document.querySelector(".main-landing-page");
 import { changeTutorialLink, tutorialLink } from "../ui/change-tutorial-link.js";
-import { mainLandingPage } from "./keyboard-nav.js";
 import { handleImgSizes } from "../ui/toggle-img-sizes.js";
 let iStep = -1;
 let steps = [];
