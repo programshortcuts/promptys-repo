@@ -112,11 +112,32 @@ function renderSidebar() {
 // LOAD PAGE
 // ======================
 async function loadPage(page) {
- 
-    const html = await fetch(page.file)
-        .then(r => r.text());
 
-    mainLandingPage.innerHTML = html;
+    if (!page) {
+        mainLandingPage.innerHTML = "";
+        return;
+    }
+
+    if (page.content) {
+        mainLandingPage.innerHTML = page.content;
+        return;
+    }
+
+    if (page.file) {
+        const response = await fetch(page.file);
+
+        if (!response.ok) {
+            console.error("Failed to load page:", page.file);
+            console.error("Status:", response.status);
+            return;
+        }
+
+        const html = await response.text();
+        mainLandingPage.innerHTML = html;
+        return;
+    }
+
+    console.error("Page has neither content nor file:", page);
 }
 // ======================
 // CREATE PAGE
@@ -129,7 +150,7 @@ function initCreatePageButton() {
         const newPage = {
             id: crypto.randomUUID(),
             title,
-            content: promptSaverTemplate.replace("New Lesson", title)
+            content: promptSaverTemplate.replace("new-side-link-page", title)
         };
         pages.push(newPage);
         savePages(pages);

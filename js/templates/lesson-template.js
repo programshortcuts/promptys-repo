@@ -1,7 +1,7 @@
 // lesson-template.js
 export const promptSaverTemplate = `
 <section class="lesson-page">
-    <h2>Lesson Temp</h2>
+    <h2>new-side-link-page</h2>
     <article class="step">
         <div class="step-txt">
             <h4>Prompt Template</h4>
