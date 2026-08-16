@@ -4,7 +4,7 @@ let default_sidebar_index = 0
 import { refreshSteps } from "../nav/main-landing-nav.js";
 import { mainLandingPage } from "../nav/main-landing-nav.js";
 import { loadPages, savePages } from "../data/page-storage.js";
-import { promptSaverTemplate } from "../templates/prompts-template.js";
+import { stepTemplate } from "../templates/step-template.js";
 import {
     toggleEditMode,
     isEditMode,
@@ -150,7 +150,7 @@ function initCreatePageButton() {
         const newPage = {
             id: crypto.randomUUID(),
             title,
-            content: promptSaverTemplate.replace("new-side-link-page", title)
+            content: stepTemplate.replace("new-side-link-page", title)
         };
         pages.push(newPage);
         savePages(pages);

@@ -1,5 +1,5 @@
 // lesson-template.js
-export const promptSaverTemplate = `
+export const stepTemplate = `
 <section class="prompts-page">
     <h2>new-side-link-page</h2>
     <article class="step">
